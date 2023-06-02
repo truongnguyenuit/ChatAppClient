@@ -18,7 +18,6 @@ import { useEffect } from "react";
 export let ENDPOINT = process.env.REACT_APP_ENDPOINT
 
 const AuthPage = () => {
-  console.log(ENDPOINT)
   const [navbar, setNavbar] = useState(true)
 
   return (
