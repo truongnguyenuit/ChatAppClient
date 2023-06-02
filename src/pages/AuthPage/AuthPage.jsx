@@ -14,9 +14,11 @@ import {
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 
-export let ENDPOINT = "http://localhost:5000";
+// eslint-disable-next-line no-undef
+export let ENDPOINT = process.env.REACT_APP_ENDPOINT
 
 const AuthPage = () => {
+  console.log(ENDPOINT)
   const [navbar, setNavbar] = useState(true)
 
   return (
